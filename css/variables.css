@@ -1,3 +1,5 @@
 :root {
   --main-color: #fe2e2e;
+  --horizontal-space: 40px;
+  --gray-color: rgba(0, 0, 0, 0.5);
 }
