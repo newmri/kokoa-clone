@@ -1,6 +1,5 @@
 .chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
 }
 
 .chat-screen .alt-header,
@@ -86,4 +85,60 @@
 
 .message-row-own .message__info {
   flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 2%;
+}
+
+.reply .reply__column:last-child {
+  width: 97%;
+  position: relative;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+
+.reply input {
+  padding: 10px;
+  width: 99%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+
+.reply__column:last-child > i {
+  right: 50px;
+  top: 10px;
+}
+
+.reply__column button {
+  background-color: var(--main-color);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 1;
 }
